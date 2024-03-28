@@ -6,4 +6,4 @@ print("Start")
 time.sleep(timer)
 
 opener = "open" if sys.platform == "darwin" else "xdg-open"
-subprocess.call([opener, "timer.odt"])
+subprocess.call([opener, "/home/ben/Python/Projects/Timer/timer.odt"])
