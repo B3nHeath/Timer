@@ -59,7 +59,7 @@ def timer(length):
                 # Find first line that doesn't start as whitespace -> a dash
                 if not re.fullmatch(r"\s*-.*\n", line):
                     # Insert our work record in this position in the document
-                    text.insert(pos, f"- {int(timer)} - {reason}\n")
+                    text.insert(pos, f"- {int(length/60)} - {reason}\n")
                     # Completed desired function
                     done = True
 
